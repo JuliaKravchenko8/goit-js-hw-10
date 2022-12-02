@@ -38,7 +38,7 @@ function createMarkup(countries) {
     refs.countryList.innerHTML = '';
   } else if (countries.length > 10) {
     refs.countryList.innerHTML = '';
-    refs.countryInfo.innerHTML = '';
+    // refs.countryInfo.innerHTML = '';
     Notiflix.Notify.info(
       'Too many matches found. Please enter a more specific name.'
     );
