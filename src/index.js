@@ -37,11 +37,11 @@ function createMarkup(countries) {
   if (countries.length > 1 && countries.length <= 10) {
     createCountriesListMarkup(countries);
     refs.countryList.innerHTML = '';
-    refs.countryInfo.innerHTML = '';
+    refs.countryInfo.innerHTML = markup;
   } else if (countries.length === 1) {
     createCountryMarkup(countries);
     refs.countryInfo.innerHTML = '';
-    refs.countryList.innerHTML = '';
+    refs.countryList.innerHTML = markup;
   } else if (countries.length > 10) {
     refs.countryList.innerHTML = '';
     refs.countryInfo.innerHTML = '';
@@ -49,7 +49,6 @@ function createMarkup(countries) {
       'Too many matches found. Please enter a more specific name.'
     );
   }
-  refs.countryList.innerHTML = markup;
 }
 
 function createCountriesListMarkup(countries) {
